@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Hotel M2m Rooms Reservations" max_length="40" name="x_51117_hotel_m2m_rooms_reservations" type="collection">
+        <element label="Reservation" max_length="32" name="reservation" reference="x_51117_hotel_reservation" type="reference"/>
+        <element label="Room" max_length="32" name="room" reference="x_51117_hotel_room" type="reference"/>
+        <index name="index">
+            <element name="reservation"/>
+        </index>
+        <index name="index2">
+            <element name="room"/>
+        </index>
+    </element>
+</database>

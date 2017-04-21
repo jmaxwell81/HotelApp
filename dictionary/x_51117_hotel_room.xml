@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Room" max_length="40" name="x_51117_hotel_room" type="collection">
+        <element label="Floor" max_length="20" name="floor" type="string"/>
+        <element label="Location" max_length="32" name="location" reference="x_51117_hotel_location" type="reference"/>
+        <element display="true" label="Room Number" max_length="20" name="room_number" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="Double" sequence="1" value="Double"/>
+                <element label="Single" sequence="2" value="Single"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="location"/>
+        </index>
+    </element>
+</database>

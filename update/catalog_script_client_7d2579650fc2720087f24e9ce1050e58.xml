@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Create Reservation">5bf7cb990f4e320087f24e9ce1050e72</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <messages/>
+        <name>RESV - Say Hi to the client</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+  
+	var usuario = g_user.userName; //se ocupa esto en lugar de glidesystem ya que eso es server script
+	
+	var ga = new GlideAjax('x_51117_hotel.SaluteGuest'); //SaluteGuest es el script include
+	ga.addParam('sysparm_name','SayHiToGuest'); //SayHiToGuest es la funcion en el script include
+	ga.addParam('sysparm_username',usuario);	
+    ga.getXML(AjaxResponse);
+	
+	function AjaxResponse(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer"); 
+	alert(answer);
+}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-10 16:45:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d2579650fc2720087f24e9ce1050e58</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>RESV - Say Hi to the client</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel" source="x_51117_hotel">84389b920f31320087f24e9ce1050e10</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">84389b920f31320087f24e9ce1050e10</sys_scope>
+        <sys_update_name>catalog_script_client_7d2579650fc2720087f24e9ce1050e58</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-10 17:02:06</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

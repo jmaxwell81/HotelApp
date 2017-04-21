@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_51117_hotel.CheckGuestExist</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CheckGuestExist</name>
+        <script><![CDATA[var CheckGuestExist = Class.create();
+CheckGuestExist.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	GuestExist: function() {
+				
+		var correo = this.getParameter('sysparm_email');
+		var gr = new GlideRecord('x_51117_hotel_guest');
+		gr.addQuery('email',correo);
+		gr.query();
+		//guardamos la info del usuario en variables
+		//var firstname = gr.getValue('first_name');
+		//var lastname = gr.getValue('last_name');
+		var firstname = "Hugo";
+		var lastname = "Ruano";
+		
+		var cuenta = gr.getRowCount();
+		
+		//creamos un nodo llamado resultado
+		var result = this.newItem("result");
+		
+		if(cuenta > 0){
+		
+		result.setAttribute("message", "Correo encontrado, favor de revisar la información.");
+		result.setAttribute("result_value", "1");
+			
+		//creamos otro nodo en el XML con la información del usuario encontrado
+		var userinfo = this.newItem("userinfo");
+		userinfo.setAttribute("firstname", firstname);
+		userinfo.setAttribute("lastname", lastname);
+		
+	    }
+		
+		if(cuenta == 0){
+			
+	    result.setAttribute("message", "Correo no encontrado, favor ingrese nombre y apellido.");
+		result.setAttribute("result_value", "0");
+		
+		}
+	},
+		
+    type: 'CheckGuestExist'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-10 18:40:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>06201ea50f06720087f24e9ce1050eb3</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>CheckGuestExist</sys_name>
+        <sys_package display_value="Hotel" source="x_51117_hotel">84389b920f31320087f24e9ce1050e10</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">84389b920f31320087f24e9ce1050e10</sys_scope>
+        <sys_update_name>sys_script_include_06201ea50f06720087f24e9ce1050eb3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-10 20:09:27</sys_updated_on>
+    </sys_script_include>
+</record_update>
