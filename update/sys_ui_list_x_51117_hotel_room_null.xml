@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>room_number</element>
-            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4d7783990f4e320087f24e9ce1050ea3</list_id>
+            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b4634d5c0f82320087f24e9ce1050eb7</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +19,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>type</element>
-            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4d7783990f4e320087f24e9ce1050ea3</list_id>
+            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b4634d5c0f82320087f24e9ce1050eb7</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -34,7 +34,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>location</element>
-            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4d7783990f4e320087f24e9ce1050ea3</list_id>
+            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b4634d5c0f82320087f24e9ce1050eb7</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -49,7 +49,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>floor</element>
-            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4d7783990f4e320087f24e9ce1050ea3</list_id>
+            <list_id display_value="x_51117_hotel_room" element="NULL" name="x_51117_hotel_room" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b4634d5c0f82320087f24e9ce1050eb7</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -74,7 +74,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>hugo.ruano</sys_created_by>
             <sys_created_on>2017-04-06 15:41:09</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b4634d5c0f82320087f24e9ce1050eb7</sys_id>

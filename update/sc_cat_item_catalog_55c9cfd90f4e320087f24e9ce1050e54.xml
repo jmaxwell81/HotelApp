@@ -6,7 +6,7 @@
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-04-10 04:02:13</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>55c9cfd90f4e320087f24e9ce1050e54</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Hotel Service Catalog.Create Reservation</sys_name>

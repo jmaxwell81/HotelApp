@@ -13,7 +13,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>hugo.ruano</sys_created_by>
         <sys_created_on>2017-03-31 21:23:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>94381f5a0f71320087f24e9ce1050e8d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_51117_hotel.user</sys_name>

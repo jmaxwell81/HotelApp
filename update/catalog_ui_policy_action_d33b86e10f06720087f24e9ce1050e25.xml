@@ -9,7 +9,7 @@
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-04-10 18:07:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d33b86e10f06720087f24e9ce1050e25</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>CreateReservation_LastName</sys_name>

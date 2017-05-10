@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-04-10 02:16:18</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f981ba5d0f0e320087f24e9ce1050e02</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_51117_hotel_reservation</sys_name>

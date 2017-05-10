@@ -16,11 +16,10 @@ CheckGuestExist.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var gr = new GlideRecord('x_51117_hotel_guest');
 		gr.addQuery('email',correo);
 		gr.query();
+		gr.next();
 		//guardamos la info del usuario en variables
-		//var firstname = gr.getValue('first_name');
-		//var lastname = gr.getValue('last_name');
-		var firstname = "Hugo";
-		var lastname = "Ruano";
+		var firstname = gr.getValue('first_name');
+		var lastname = gr.getValue('last_name');
 		
 		var cuenta = gr.getRowCount();
 		
@@ -54,14 +53,14 @@ CheckGuestExist.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2017-04-10 18:40:56</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>06201ea50f06720087f24e9ce1050eb3</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>CheckGuestExist</sys_name>
         <sys_package display_value="Hotel" source="x_51117_hotel">84389b920f31320087f24e9ce1050e10</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Hotel">84389b920f31320087f24e9ce1050e10</sys_scope>
         <sys_update_name>sys_script_include_06201ea50f06720087f24e9ce1050eb3</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-04-10 20:09:27</sys_updated_on>
+        <sys_updated_by>hugo.ruano</sys_updated_by>
+        <sys_updated_on>2017-04-21 04:41:53</sys_updated_on>
     </sys_script_include>
 </record_update>

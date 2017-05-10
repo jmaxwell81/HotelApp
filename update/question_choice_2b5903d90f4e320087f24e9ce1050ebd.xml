@@ -8,7 +8,7 @@
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-04-10 04:00:32</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2b5903d90f4e320087f24e9ce1050ebd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>4</sys_name>

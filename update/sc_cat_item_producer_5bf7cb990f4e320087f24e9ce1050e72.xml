@@ -70,7 +70,7 @@ current.description = descripcion;]]></script>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-04-10 03:55:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>5bf7cb990f4e320087f24e9ce1050e72</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Create Reservation</sys_name>
